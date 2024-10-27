@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binomial Coefficient Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <h1>Binomial Coefficient Calculator</h1>
+    <div>
+        <input type="number" id="nInput" placeholder="n" min="0" value="5">
+        <input type="number" id="kInput" placeholder="k" min="0" value="2">
+    </div>
+    <div class="method-selection">
+        <label>
+            <input type="radio" name="method" value="dynamic" checked>
+            Dynamic Programming (O(n*k))
+        </label>
+        <label>
+            <input type="radio" name="method" value="formula">
+            Direct Formula (O(n))
+        </label>
+    </div>
+    <div class="speed-selection">
+        <label>
+            Speed:
+            <select id="speedSelect">
+                <option value="1000">Slow</option>
+                <option value="500" selected>Medium</option>
+                <option value="200">Fast</option>
+            </select>
+        </label>
+    </div>
+    <div>
+        <button onclick="generateAndVisualize()">Calculate</button>
+    </div>
+    <div class="triangle" id="triangle"></div>
+    <div class="formula" id="formula"></div>
+    <div class="time-complexity" id="time-complexity"></div>
+    <div class="final-result" id="final-result"></div>
+    <div class="dynamic-programming" id="dynamic-programming"></div>
+    <div id="chart-container">
+        <canvas id="timeComplexityChart"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

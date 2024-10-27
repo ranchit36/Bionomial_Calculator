@@ -1,0 +1,61 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.triangle {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: lightgrey;
+    transition: background-color 0.5s;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.time-complexity, .final-result {
+    margin-top: 20px;
+}
+
+input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 5px 10px;
+}
+
+.method-selection, .speed-selection {
+    margin: 20px 0;
+}
+
+.formula {
+    font-size: 20px;
+    margin: 10px;
+}
+
+#chart-container {
+    width: 80%;
+    margin: auto;
+}
